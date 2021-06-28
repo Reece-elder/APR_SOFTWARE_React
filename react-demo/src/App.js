@@ -1,11 +1,15 @@
 import './resources/App.css';
 
 import HelloWorld from './components/HelloWorld'
+import Home from './components/Home'
 
 function App() {
   return (
+    // <div className="App">
+    //   <HelloWorld/>
+    // </div>
     <div className="App">
-      <HelloWorld/>
+      <Home/>
     </div>
   );
 }
