@@ -1,24 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import './resources/App.css';
+
+import HelloWorld from './components/HelloWorld'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>
-          app.js has now been modified!
-        </h3>
-        <h4>This has been modified</h4>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloWorld/>
     </div>
   );
 }
