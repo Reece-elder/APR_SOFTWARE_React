@@ -4,6 +4,9 @@ import HelloWorld from './components/HelloWorld'
 import Home from './components/002-Component_Hierarchy/Home'
 import Parent from './components/003-Props/Parent'
 import ParentComplex from './components/003-Props/complex/Parent';
+import Counter from './components/004-State/Counter';
+import CounterUpdate from './components/004-State/UpdateCounter'
+
 
 function App() {
   return (
@@ -16,8 +19,11 @@ function App() {
     // <div>
     //   <Parent/>
     // </div>
+    // <div>
+    //   <ParentComplex/>
+    // </div>
     <div>
-      <ParentComplex/>
+      <CounterUpdate/>
     </div>
   );
 }

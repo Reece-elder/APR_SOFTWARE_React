@@ -18,6 +18,7 @@ const Parent = () => {
         age: 7
     }
 
+
     const penguinList = [
         {
             name: "Pingu",
