@@ -7,6 +7,9 @@ import ParentComplex from './components/003-Props/complex/Parent';
 import Counter from './components/004-State/Counter';
 import CounterUpdate from './components/004-State/UpdateCounter'
 import Manager from './components/005-Forms/Manager';
+import ManagerAnimal from './components/animalContact-Card/Manager';
+import ManagerLifting from './components/006-LiftingState/Manager';
+import BasketManager from './components/006-LiftingState/basketManager/BasketManager';
 
 
 function App() {
@@ -26,7 +29,9 @@ function App() {
     // <div>
     //   <CounterUpdate/>
     // </div>
-    <Manager/>
+    // <ManagerAnimal/>
+    // <ManagerLifting/>
+    <BasketManager/>
   );
 }
 
