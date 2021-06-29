@@ -3,6 +3,7 @@ import './resources/App.css';
 import HelloWorld from './components/HelloWorld'
 import Home from './components/002-Component_Hierarchy/Home'
 import Parent from './components/003-Props/Parent'
+import ParentComplex from './components/003-Props/complex/Parent';
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
     // <div className="App">
     //   <Home/>
     // </div>
+    // <div>
+    //   <Parent/>
+    // </div>
     <div>
-      <Parent/>
+      <ParentComplex/>
     </div>
   );
 }
