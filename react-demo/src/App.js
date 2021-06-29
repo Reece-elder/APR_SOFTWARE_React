@@ -6,6 +6,7 @@ import Parent from './components/003-Props/Parent'
 import ParentComplex from './components/003-Props/complex/Parent';
 import Counter from './components/004-State/Counter';
 import CounterUpdate from './components/004-State/UpdateCounter'
+import Manager from './components/005-Forms/Manager';
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
     // <div>
     //   <ParentComplex/>
     // </div>
-    <div>
-      <CounterUpdate/>
-    </div>
+    // <div>
+    //   <CounterUpdate/>
+    // </div>
+    <Manager/>
   );
 }
 
