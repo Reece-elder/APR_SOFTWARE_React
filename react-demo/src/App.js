@@ -20,6 +20,11 @@ import About from './components/007-Routing/pageComponents/About';
 import Contact from './components/007-Routing/pageComponents/Contact';
 import Product from './components/007-Routing/pageComponents/Product';
 
+import Clock from './components/008-Hooks/Clock';
+import HelloWorldEffect from './components/008-Hooks/HelloWorld';
+
+import Bar from './components/009-DataRequests/Bar';
+
 
 function App() {
   return (
@@ -32,29 +37,33 @@ function App() {
 
     // Route specify path, if path matches path render that component
 
-    <Router>
-      <Nav/>
-      <Switch>
+    // <Router>
+    //   <Nav/>
+    //   <Clock/>
+    //   <HelloWorldEffect/>
+    //   <Switch>
 
-        <Route path="/" exact> 
-          <HomeRoute/>
-        </Route>
+    //     <Route path="/" exact> 
+    //       <HomeRoute/>
+    //     </Route>
 
-        <Route path="/about">
-          <About/>
-        </Route>
+    //     <Route path="/about">
+    //       <About/>
+    //     </Route>
 
-        <Route path="/contact">
-          <Contact/>
-        </Route>
+    //     <Route path="/contact">
+    //       <Contact/>
+    //     </Route>
 
-        <Route path="/product/:id">
-          <Product/>
-        </Route>
+    //     <Route path="/product/:id">
+    //       <Product/>
+    //     </Route>
 
-      </Switch>
-      <Footer/>
-    </Router>
+    //   </Switch>
+    //   <Footer/>
+    // </Router>
+
+    <Bar/>
 
     // <div className="App">
     //   <HelloWorld/>
