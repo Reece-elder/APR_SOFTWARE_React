@@ -1,5 +1,7 @@
 import './resources/App.css';
 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import HelloWorld from './components/HelloWorld'
 import Home from './components/002-Component_Hierarchy/Home'
 import Parent from './components/003-Props/Parent'
@@ -10,10 +12,50 @@ import Manager from './components/005-Forms/Manager';
 import ManagerAnimal from './components/animalContact-Card/Manager';
 import ManagerLifting from './components/006-LiftingState/Manager';
 import BasketManager from './components/006-LiftingState/basketManager/BasketManager';
+import Nav from './components/007-Routing/Nav'
+import Footer from './components/007-Routing/Footer'
+
+import HomeRoute from './components/007-Routing/pageComponents/Home';
+import About from './components/007-Routing/pageComponents/About';
+import Contact from './components/007-Routing/pageComponents/Contact';
+import Product from './components/007-Routing/pageComponents/Product';
 
 
 function App() {
   return (
+
+    // Router switch case goes in parent component
+    // Nav (or equivalent) goes at the top of the rooter
+    // Footer (or equiv) goes at the bottom 
+
+    // Anything between <Switch> </Switch> are the 'cases' you want to switch between
+
+    // Route specify path, if path matches path render that component
+
+    <Router>
+      <Nav/>
+      <Switch>
+
+        <Route path="/" exact> 
+          <HomeRoute/>
+        </Route>
+
+        <Route path="/about">
+          <About/>
+        </Route>
+
+        <Route path="/contact">
+          <Contact/>
+        </Route>
+
+        <Route path="/product">
+          <Product/>
+        </Route>
+
+      </Switch>
+      <Footer/>
+    </Router>
+
     // <div className="App">
     //   <HelloWorld/>
     // </div>
@@ -31,7 +73,11 @@ function App() {
     // </div>
     // <ManagerAnimal/>
     // <ManagerLifting/>
-    <BasketManager/>
+    // <BasketManager/>
+
+
+
+
   );
 }
 
