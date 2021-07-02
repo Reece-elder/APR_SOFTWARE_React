@@ -6,7 +6,7 @@ const Beer = (props) => {
             <h3>{name}</h3>
             <img src={image} alt={name} width={70}></img>
             <p>Alcohol content of beer is {abv}</p>
-            <h4> Good food pairings with this are: </h4>
+            <h4>Good food pairings with this are: </h4>
             {foodPairing.map((food) => (
                 <p>{food}</p>
             ))}

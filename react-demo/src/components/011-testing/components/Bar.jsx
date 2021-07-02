@@ -7,8 +7,12 @@ const Bar = () => {
     const abv = 4.5;
     const foodPairing = ["food pairing 1", "food pairing 2"];
 
-    return ( 
-        <Beer name={name} image={image} abv={abv} foodPairing={foodPairing}/>
+    return (
+        <>
+        <h2>This should break it (hopefully)</h2>
+            <Beer name={name} image={image} abv={abv} foodPairing={foodPairing}/>
+        </> 
+        
      );
 }
  
