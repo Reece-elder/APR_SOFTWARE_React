@@ -25,6 +25,8 @@ import HelloWorldEffect from './components/008-Hooks/HelloWorld';
 
 import Bar from './components/009-DataRequests/Bar';
 
+import Child from './components/010-Bootstrap/Child'
+
 
 function App() {
   return (
@@ -63,7 +65,9 @@ function App() {
     //   <Footer/>
     // </Router>
 
-    <Bar/>
+    // <Bar/>
+
+    <Child/>
 
     // <div className="App">
     //   <HelloWorld/>
