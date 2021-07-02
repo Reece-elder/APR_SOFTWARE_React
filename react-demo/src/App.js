@@ -27,6 +27,8 @@ import Bar from './components/009-DataRequests/Bar';
 
 import Child from './components/010-Bootstrap/Child'
 
+import FormTest from './components/011-testing/components/Form';
+
 
 function App() {
   return (
@@ -67,7 +69,9 @@ function App() {
 
     // <Bar/>
 
-    <Child/>
+    // <Child/>
+
+    <FormTest/>
 
     // <div className="App">
     //   <HelloWorld/>

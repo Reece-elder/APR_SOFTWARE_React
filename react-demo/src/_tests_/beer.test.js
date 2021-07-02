@@ -32,7 +32,7 @@ describe(`Beer component testing with props`, () => {
         const h3 = testComponent.findByType('h3');
 
         // Assert
-        // Expecting to recieve an [array] so to equal must be an array
+        // Expecting to receive an [array] so to equal must be an array
         expect(h3.children).toEqual([beerData.name]);
     });
 
@@ -51,30 +51,14 @@ describe(`Beer component testing with props`, () => {
 describe(`Snapshot testing`,()=> {
 
         // Variable for the props to pass into beer
-        const beerData = {
-            name: 'test_name',
-            image: 'test_url',
-            abv: 123,
-            foodPairing: ['food_pairing1', 'food_pairing2']
-        };
-    
-        // Create a variable called testComponent
-        let testComponent;
-    
-        // before each test create a new component and assign to test component
-        beforeEach(() => {
-            const TestInstance = create(<Beer {...beerData}/>);
-            testComponent = TestInstance.root;
-        });
-
         // Snapshot test - Takes a snapshot of the code (in JSON), checks the current code against the snapshot
         // If match - Test passes
         // If not match.. test fails. 
 
-        it(`Should match the snapshot`, () => {
-            const element = create(<Beer {...beerData}/>).toJSON();
-            expect(element).toMatchSnapshot();
-        })
+        // it(`Should match the snapshot`, () => {
+        //     const element = create(<Beer {...beerData}/>).toJSON();
+        //     expect(element).toMatchSnapshot();
+        // })
 
         it(`a = 5`, () => {
             const a = 5;

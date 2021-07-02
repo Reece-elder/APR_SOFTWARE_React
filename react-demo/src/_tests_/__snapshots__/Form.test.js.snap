@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form testing Should match the snapshot 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+       username: 
+    </label>
+    <input
+      id="username"
+      name="username"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      id="submitButton"
+      onClick={[Function]}
+      type="submit"
+    >
+       Submit Button 
+    </button>
+  </form>
+  <h3>
+     The username is: 
+    
+     
+  </h3>
+</div>
+`;
