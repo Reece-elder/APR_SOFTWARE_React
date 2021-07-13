@@ -5,7 +5,7 @@ const {Pizza} = require('../database.js');
 
 router.get('/', (req, res) => {
     console.log("Hey im a route");
-    next();
+    res.send("hey im the default")
 })
 
 // Create method for app 

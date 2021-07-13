@@ -17,12 +17,19 @@ const pizzaSchema = new Schema({
     versionKey: false 
 });
 
-// Model/Object of the schema used in the router
-const Pizza = model('Pizza', pizzaSchema);
-
+// const env = process.env.NODE_ENV;
+const env = "test";
+console.log(env);
+if(env == 'test'){
+    console.log("Test env");
+    process.env.MONGODB_URI = 'mongodb://localhost:27017/testPizzeria'
+  } else {
+    console.log("Prod env");
+    process.env.MONGODB_URI = 'mongodb://localhost:27017/pizzeria'
+  };
 
 // connect to MongoDB with - mongoose.connect(uri, options)
-mongoose.connect('mongodb://localhost:27017/pizzeria', { useNewUrlParser: true }, 
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true }, 
 function (error) {
     if (error) {
         console.log("error");
@@ -31,5 +38,10 @@ function (error) {
     }
 });
 
+
+const Pizza = model('Pizza', pizzaSchema);
+
 // Exporting the Pizza object out of the module
-module.exports = {"Pizza": Pizza};
+module.exports = {
+    "Pizza": Pizza,
+};

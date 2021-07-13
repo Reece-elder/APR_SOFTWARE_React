@@ -22,11 +22,6 @@ app.use("/hello", (req,res,next) => {
 // Custom middleware
 
 
-
-
-
-
-
 // Communicating with port and checking connection
 const server = app.listen(5015, () => {
     console.log(`Server has successfully started on port number: ${server.address().port}`);
